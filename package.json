@@ -1,0 +1,22 @@
+{
+  "name": "tomasv",
+  "version": "1.0.0",
+  "description": "Personal website",
+  "main": "index.js",
+  "scripts": {
+    "serve": "serve src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tvolkovickas/tomasv.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tvolkovickas/tomasv/issues"
+  },
+  "homepage": "https://github.com/tvolkovickas/tomasv#readme",
+  "devDependencies": {
+    "serve": "^11.3.0"
+  }
+}
