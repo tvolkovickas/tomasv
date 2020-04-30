@@ -8,16 +8,24 @@
     <meta name="description"
         content="Information on how this website has been built including techniques and technologies used">
     <title>tomasv.co.uk</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="normalize.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 </head>
 
 <body>
     <header>
+        <ul id="side-menu" class="sidenav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="rendering.html">Rendering</a></li>
+            <li><a href="website.html">This Website</a></li>
+            <li> <a href="about.html">About</a></li>
+        </ul>
         <nav>
             <div class="nav-wrapper">
                 <div class="container">
-                    <ul id="nav-mobile">
+                    <a href="#" data-target="side-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="hide-on-med-and-down">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="rendering.html">Rendering</a></li>
                         <li><a href="website.html">This Website</a></li>
@@ -75,6 +83,11 @@
             <div class="container">© 2020 Tomas Volkovickas</div>
         </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        var elems = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(elems);
+    </script>
 </body>
 
 </html>
