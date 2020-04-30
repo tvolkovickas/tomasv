@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Tomas Volkovickas">
+    <meta name="description"
+        content="Information on how this website has been built including techniques and technologies used">
+    <title>tomasv.co.uk</title>
+    <link href="normalize.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <div class="container">
+                    <ul id="nav-mobile">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rendering.html">Rendering</a></li>
+                        <li><a href="website.html">This Website</a></li>
+                        <li> <a href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h1 class="center-align">This Website</h1>
+            <div class="divider"></div>
+            <div class="section">
+                <p class="flow-text">
+                    On this page I will describe how this website was built. This will be a living document
+                    and I will try and update it as major changes are implemented.
+                </p>
+                <h5>HTML</h5>
+                <p class="flow-text">
+                    All pages are written from a scratch without using any frameworks. Why? Well, it's a great way to
+                    learn and see
+                    what has been abstracted when using frameworks. Pages are linked using anchors without any other
+                    routing.
+                </p>
+                <h5>CSS</h5>
+                <p class="flow-text">
+                    There is no custom CSS added. All of it has been provided by <a
+                        href="https://materializecss.com/about.html">Materialize</a>.
+                    The only other addition was <a href="https://necolas.github.io/normalize.css/">Normalize</a>. This
+                    is to ensure that we don't have major difference between browsers on how content is displayed to
+                    user.
+                </p>
+                <h5>Javascript</h5>
+                <p class="flow-text">
+                    Not much to say here. Currently this website has no javascript files included.
+                </p>
+                <h5>Infrastructure</h5>
+                <p class="flow-text">
+                    This website is served from AWS S3 bucket as static site. In addition to this, Cloudfront CDN was
+                    added to speed up load times.
+                </p>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <h6>Contact</h6>
+            <a class="white-text" href="mailto:tvolkovickas@gmail.com">Email</a>
+            <a class="white-text" href="https://www.linkedin.com/in/tomas-volkovickas">LinkedIn</a>
+            <a class="white-text" href="https://www.facebook.com/volkovickas">Facebook</a>
+            <a class="white-text" href="https://www.instagram.com/volkovickas">Instagram</a>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">© 2020 Tomas Volkovickas</div>
+        </div>
+    </footer>
+</body>
+
+</html>

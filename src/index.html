@@ -12,20 +12,29 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <div class="container">
+                    <ul id="nav-mobile">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="rendering.html">Rendering</a></li>
+                        <li><a href="website.html">This Website</a></li>
+                        <li> <a href="about.html">About</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
             <h1 class="center-align">Welcome!</h1>
-            <a href="index.html">Home</a>
-            <a href="rendering.html">Rendering</a>
-            <a href="about.html">About</a>
-        </header>
-        <main>
             <blockquote>“Talk is cheap. Show me the code.” - Linus Torvalds</blockquote>
             <div class="divider"></div>
             <div class="section">
                 <div class="row">
                     <div class="col s12 l6">
-                        <div class="card">
+                        <div class="card medium">
                             <div class="card-image">
                                 <img alt="Crushed skull during volumetric rendering"
                                     src="https://s3-eu-west-1.amazonaws.com/tomasv.co.uk-content/crushedSkull.jpg">
@@ -39,22 +48,37 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col s12 l6">
+                        <div class="card medium">
+                            <div class="card-image">
+                                <img alt="Web Development"
+                                    src="https://s3-eu-west-1.amazonaws.com/tomasv.co.uk-content/webdevelopment.jpg">
+                            </div>
+                            <div class="card-content">
+                                <span class="card-title">This Website</span>
+                                <p>Description on how this website was built</p>
+                            </div>
+                            <div class="card-action">
+                                <a href="website.html">This Website</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </main>
-        <footer class="page-footer">
-            <div class="container">
-                <h6>Contact</h6>
-                <a class="white-text" href="mailto:tvolkovickas@gmail.com">Email</a>
-                <a class="white-text" href="https://www.linkedin.com/in/tomas-volkovickas">LinkedIn</a>
-                <a class="white-text" href="https://www.facebook.com/volkovickas">Facebook</a>
-                <a class="white-text" href="https://www.instagram.com/volkovickas">Instagram</a>
-            </div>
-            <div class="footer-copyright">
-                <div class="container">© 2020 Tomas Volkovickas</div>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </main>
+    <footer class="page-footer">
+        <div class="container">
+            <h6>Contact</h6>
+            <a class="white-text" href="mailto:tvolkovickas@gmail.com">Email</a>
+            <a class="white-text" href="https://www.linkedin.com/in/tomas-volkovickas">LinkedIn</a>
+            <a class="white-text" href="https://www.facebook.com/volkovickas">Facebook</a>
+            <a class="white-text" href="https://www.instagram.com/volkovickas">Instagram</a>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">© 2020 Tomas Volkovickas</div>
+        </div>
+    </footer>
 </body>
 
 </html>
