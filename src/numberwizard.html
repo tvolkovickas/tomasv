@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Tomas Volkovickas">
-    <meta name="description" content="Rendering showcase containing YouTube links">
+    <meta name="description" content="Number Wizard game">
     <title>tomasv.co.uk</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="normalize.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <script src="./developerslife/Build/UnityLoader.js"></script>
+    <script src="./numberwizard/Build/UnityLoader.js"></script>
     <script>
-        var unityInstance = UnityLoader.instantiate("unityContainer", "./developerslife/Build/developerslife.json");
+        var unityInstance = UnityLoader.instantiate("unityContainer", "./numberwizard/Build/numberWizard.json");
     </script>
 </head>
 
@@ -40,13 +40,15 @@
     </header>
     <main>
         <div class="container">
-            <h1 class="center-align">Developer's life</h1>
+            <h1 class="center-align">Number Wizard</h1>
             <div class="divider"></div>
             <div class="section">
-                <h5>My first ever Unity game</h5>
-                <p>Text adventure game built as part of Udemy course. This is just a demo</p>
+                <h5>My second Unity game</h5>
+                <p>Number guessing game built as part of Udemy course. Features Marvin</p>
                 <div class="row">
-                    <div id="unityContainer" style="width: 960px; height: 600px"></div>
+                    <div class="col offset-s1 s9">
+                        <div id="unityContainer" style="width: 100%; height: 600px"></div>
+                    </div>
                 </div>
             </div>
         </div>
