@@ -12,7 +12,7 @@ const Home = () => (
                 <div className="col s12 l6">
                     <Card
                         imageAlt="Smoke Away game"
-                        imageUrl="https://s3-eu-west-1.amazonaws.com/tomasv.co.uk-content/smokeaway.png"
+                        imageUrl="https://tomasv.co.uk/media/smokeaway.png"
                         title="Smoke Away game"
                         description="Game inspired by a classic Breakout"
                         link="/games/smokeaway"
@@ -22,7 +22,7 @@ const Home = () => (
                 <div className="col s12 l6">
                     <Card
                         imageAlt="Crushed skull during volumetric rendering"
-                        imageUrl="https://s3-eu-west-1.amazonaws.com/tomasv.co.uk-content/crushedSkull.jpg"
+                        imageUrl="https://tomasv.co.uk/media/crushedSkull.jpg"
                         title="Rendering"
                         description="Volumetric rendering examples"
                         link="/rendering"
@@ -34,7 +34,7 @@ const Home = () => (
                 <div className="col s12 l6">
                     <Card
                         imageAlt="Web Development"
-                        imageUrl="https://s3-eu-west-1.amazonaws.com/tomasv.co.uk-content/webdevelopment.jpg"
+                        imageUrl="https://tomasv.co.uk/media/webdevelopment.jpg"
                         title="This Website"
                         description="Description on how this website was built"
                         link="/website"

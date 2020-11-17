@@ -8,7 +8,7 @@ const About = () => (
             <div className="row">
                 <div className="col offset-s3 s6">
                     <img className="responsive-img circle" alt="Tomas Volkovickas"
-                        src="https://s3-eu-west-1.amazonaws.com/tomasv.co.uk-content/me.jpg" />
+                        src="https://tomasv.co.uk/media/me.jpg" />
                 </div>
             </div>
             <h5>Who is Tomas Volkovickas?</h5>
