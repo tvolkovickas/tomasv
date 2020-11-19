@@ -7,6 +7,7 @@ import Rendering from './pages/Rendering';
 import Website from './pages/Website';
 import About from './pages/About';
 import Games from './pages/Games';
+import Smokeaway from './pages/Smokeaway';
 import {
   BrowserRouter as Router,
   Switch,
@@ -31,8 +32,11 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route path="/games">
+          <Route exact path="/games">
             <Games />
+          </Route>
+          <Route path="/games/smokeaway">
+            <Smokeaway />
           </Route>
           <Route>
             <Home />
