@@ -36,12 +36,16 @@ const Mtrack = () => {
     "6S/D",
     "",
   ];
-  const toggle = (item) => {
+  const stopCounter = () => {
+    setCounter(null);
+    setSelectedItem(null);
+  };
+  const selectItem = (item) => {
     if (item === "") {
       return;
     }
-    setCounter(item === selectedItem ? null : 0);
-    setSelectedItem(item === selectedItem ? null : item);
+    setCounter(0);
+    setSelectedItem(item);
   };
 
   useEffect(() => {
@@ -57,38 +61,43 @@ const Mtrack = () => {
   }, [counter]);
   return (
     <div>
-      <div className={styles.container}>
-        {displayItems.map((item, index) => (
-          <div
-            key={index}
-            className={cn(styles.gridItem, {
-              [styles.on]: item === selectedItem,
-            })}
-            onClick={() => toggle(item)}
-          >
-            {item}
-          </div>
-        ))}
-      </div>
-      {counter !== null && (
-        <div className={styles.counter}>
-          <span>
-            {Math.floor((counter % (60 * 60 * 24)) / (60 * 60))
-              .toString()
-              .padStart(2, "0")}
-          </span>
-          <span className={styles.blinker}>:</span>
-          <span>
-            {Math.floor((counter % (60 * 60)) / 60)
-              .toString()
-              .padStart(2, "0")}
-          </span>
-          <span className={styles.blinker}>:</span>
-          <span>
-            {Math.floor(counter % 60)
-              .toString()
-              .padStart(2, "0")}
-          </span>
+      {selectedItem && (
+        <div className={styles.on} onClick={stopCounter}>
+          <div className={styles.selectedItem}>{selectedItem}</div>
+          {counter !== null && (
+            <div className={styles.counter}>
+              <span>
+                {Math.floor((counter % (60 * 60 * 24)) / (60 * 60))
+                  .toString()
+                  .padStart(2, "0")}
+              </span>
+              <span className={styles.blinker}>:</span>
+              <span>
+                {Math.floor((counter % (60 * 60)) / 60)
+                  .toString()
+                  .padStart(2, "0")}
+              </span>
+              <span className={styles.blinker}>:</span>
+              <span>
+                {Math.floor(counter % 60)
+                  .toString()
+                  .padStart(2, "0")}
+              </span>
+            </div>
+          )}
+        </div>
+      )}
+      {!selectedItem && (
+        <div className={styles.container}>
+          {displayItems.map((item, index) => (
+            <div
+              key={index}
+              className={cn(styles.gridItem)}
+              onClick={() => selectItem(item)}
+            >
+              {item}
+            </div>
+          ))}
         </div>
       )}
     </div>
